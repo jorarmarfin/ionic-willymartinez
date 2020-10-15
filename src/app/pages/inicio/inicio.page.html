@@ -1,30 +1,35 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title> Willy Martinez Sánchez </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <!-- List of Text Items -->
   <ion-list>
-    <ion-item>
+    <ion-item routerLink="/biografia">
       <ion-avatar slot="start">
-        <img src="https://ionicframework.com/docs/demos/api/list/avatar-finn.png" />
+        <img
+          src="../assets/images/avatar.jpg"
+        />
       </ion-avatar>
       <ion-label>
-        <h2>Finn</h2>
-        <h3>I'm a big deal</h3>
-        <p>Listen, I've had a pretty messed up day...</p>
+        <h2>Biografía</h2>
+        <h3>Siempre firmes en la fe</h3>
+        <p>Testimonio de vida</p>
       </ion-label>
+    </ion-item>
+    <ion-item routerLink="/asambleas">
+      <ion-label >Asamblea de alabanza y adoración</ion-label>
     </ion-item>
     <ion-item>
       <ion-label>Podcast</ion-label>
     </ion-item>
     <ion-item>
       <ion-label>Promesas de vida</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Asamblea de alabanza y adoración</ion-label>
     </ion-item>
     <ion-item>
       <ion-label>Rosario En vivo</ion-label>
