@@ -4,13 +4,16 @@ import { IonicModule } from '@ionic/angular';
 
 
 import { HeaderComponent } from './header/header.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    VideosComponent
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    VideosComponent
   ],
   imports: [
     CommonModule,

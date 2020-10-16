@@ -8,12 +8,13 @@ import { OctoberService } from 'src/app/services/october.service';
 })
 export class AsambleasPage implements OnInit {
 
+  v_asambleas: any[]=[];
   constructor(private october:OctoberService) { }
 
   ngOnInit() {
-    this.october.getYoutube().subscribe(resp=>{
-        console.log(resp);
-    });
+    // this.october.getYoutube().subscribe((resp:any)=>{
+    //     this.v_asambleas = resp.params;
+    // });
   }
 
 

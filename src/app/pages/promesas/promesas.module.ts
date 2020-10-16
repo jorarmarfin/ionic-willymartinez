@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AsambleasPageRoutingModule } from './asambleas-routing.module';
+import { PromesasPageRoutingModule } from './promesas-routing.module';
 
-import { AsambleasPage } from './asambleas.page';
+import { PromesasPage } from './promesas.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { PipesModule } from 'src/app/pipes/pipes.module';
 
@@ -15,10 +15,10 @@ import { PipesModule } from 'src/app/pipes/pipes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    AsambleasPageRoutingModule,
+    PromesasPageRoutingModule,
     ComponentsModule,
     PipesModule
   ],
-  declarations: [AsambleasPage]
+  declarations: [PromesasPage]
 })
-export class AsambleasPageModule {}
+export class PromesasPageModule {}

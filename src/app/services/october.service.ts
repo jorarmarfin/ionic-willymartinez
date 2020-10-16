@@ -8,7 +8,7 @@ export class OctoberService {
 
   constructor(private http:HttpClient) { }
 
-  getYoutube(){
-    return this.http.get('http://willymartinezsanchez.com/api/v1/youtube/asamblea');
+  getYoutube(categoria: string){
+    return this.http.get<RespuestaOctober>('http://willymartinezsanchez.com/api/v1/youtube/'+categoria);
   }
 }
