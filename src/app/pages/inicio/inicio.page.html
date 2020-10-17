@@ -3,24 +3,22 @@
     <ion-buttons>
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title> Willy Martinez Sánchez </ion-title>
+    <ion-title class="ion-text-center"> <h1> Willy Martinez Sánchez</h1>  </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <img src="../assets/images/w2.jpg" width="100%"  />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <!-- List of Text Items -->
   <ion-list>
     <ion-item routerLink="/biografia">
-      <ion-avatar slot="start">
-        <img
-          src="../assets/images/avatar.jpg"
-        />
-      </ion-avatar>
-      <ion-label>
-        <h2>Biografía</h2>
-        <h3>Siempre firmes en la fe</h3>
-        <p>Testimonio de vida</p>
-      </ion-label>
+      <ion-label>Biografía</ion-label>
     </ion-item>
     <ion-item routerLink="/promesas">
       <ion-label>Promesas de vida</ion-label>

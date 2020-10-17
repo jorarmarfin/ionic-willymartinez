@@ -7,10 +7,6 @@ const routes: Routes = [
   {
     path: '',
     component: PromesasPage
-  },
-  {
-    path: 'promesa',
-    loadChildren: () => import('./promesa/promesa.module').then( m => m.PromesaPageModule)
   }
 ];
 

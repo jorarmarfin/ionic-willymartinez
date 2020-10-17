@@ -5,11 +5,14 @@ import { IonicModule } from '@ionic/angular';
 
 import { HeaderComponent } from './header/header.component';
 import { VideosComponent } from './videos/videos.component';
+import { PipesModule } from '../pipes/pipes.module';
+import { VideodetalleComponent } from './videodetalle/videodetalle.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    VideosComponent
+    VideosComponent,
+    VideodetalleComponent
   ],
   exports:[
     HeaderComponent,
@@ -17,7 +20,8 @@ import { VideosComponent } from './videos/videos.component';
   ],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    PipesModule
   ]
 })
 export class ComponentsModule { }
