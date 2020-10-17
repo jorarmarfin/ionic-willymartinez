@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Youtube } from 'src/app/interfaces/interfaces';
-import { OctoberService } from 'src/app/services/october.service';
 
 @Component({
   selector: 'app-promesas',
@@ -9,14 +7,12 @@ import { OctoberService } from 'src/app/services/october.service';
 })
 export class PromesasPage implements OnInit {
 
-  dataYoutube: Youtube[]=[];
-  
-  constructor(private october: OctoberService) { }
+  categoria: string;
+ 
+  constructor() { }
 
   ngOnInit() {
-    this.october.getYoutube('promesas').subscribe(resp=>{
-        this.dataYoutube.push(...resp.youtube);
-    });
+    this.categoria = 'promesas';
   }
 
 }

@@ -11,10 +11,12 @@ const URL = environment.url;
 
 export class OctoberService {
 
+  pagina : number = 0;
 
   constructor(private http:HttpClient) { }
 
   getYoutube(categoria: string){
-    return this.http.get<RespuestaOctober>(`${URL}/youtube/${categoria}`);
+    this.pagina++;
+    return this.http.get<RespuestaOctober>(`${URL}/youtube/${categoria}?page=${this.pagina}`);
   }
 }
