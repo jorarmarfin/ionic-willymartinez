@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { RespuestaOctober } from '../interfaces/interfaces';
+import { RptaOctoberProx } from '../interfaces/proximamante';
 
 const URL = environment.url;
 
@@ -18,5 +19,8 @@ export class OctoberService {
   getYoutube(categoria: string){
     this.pagina++;
     return this.http.get<RespuestaOctober>(`${URL}/youtube/${categoria}?page=${this.pagina}`);
+  }
+  getProximamente(){
+    return this.http.get<RptaOctoberProx>(`${URL}/proximamente`);
   }
 }

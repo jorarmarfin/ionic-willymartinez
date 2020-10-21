@@ -37,4 +37,12 @@
       <ion-label>Ahora comprendo la biblia</ion-label>
     </ion-item>
   </ion-list>
+  <ion-item>
+    <ion-title class="ion-text-center">Proximamente</ion-title>
+  </ion-item>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let item of proximamente">
+      <h1><img [src]="item.imagen" class="proximamente"></h1>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
