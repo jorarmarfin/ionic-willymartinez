@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PromesasPageRoutingModule } from './promesas-routing.module';
+import { BibliaPageRoutingModule } from './biblia-routing.module';
 
-import { PromesasPage } from './promesas.page';
+import { BibliaPage } from './biblia.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { PipesModule } from 'src/app/pipes/pipes.module';
 
@@ -15,10 +15,10 @@ import { PipesModule } from 'src/app/pipes/pipes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    PromesasPageRoutingModule,
+    BibliaPageRoutingModule,
     ComponentsModule,
     PipesModule
   ],
-  declarations: [PromesasPage] 
+  declarations: [BibliaPage]
 })
-export class PromesasPageModule {}
+export class BibliaPageModule {}

@@ -51,7 +51,7 @@ export class VideosComponent implements OnInit {
   
   }
   cargaData(inicio:string,event?){
-    this.october.getYoutube(inicio,'promesas').subscribe(resp=>{
+    this.october.getYoutube(inicio,this.categoriaYoutube).subscribe(resp=>{
       this.dataYoutube.push(...resp.youtube);
       if (event) {
         event.target.complete();

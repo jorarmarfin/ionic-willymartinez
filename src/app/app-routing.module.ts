@@ -26,6 +26,22 @@ const routes: Routes = [
   {
     path: 'promesas',
     loadChildren: () => import('./pages/promesas/promesas.module').then( m => m.PromesasPageModule)
+  },
+  {
+    path: 'rosario',
+    loadChildren: () => import('./pages/rosario/rosario.module').then( m => m.RosarioPageModule)
+  },
+  {
+    path: 'predicas',
+    loadChildren: () => import('./pages/predicas/predicas.module').then( m => m.PredicasPageModule)
+  },
+  {
+    path: 'libros',
+    loadChildren: () => import('./pages/libros/libros.module').then( m => m.LibrosPageModule)
+  },
+  {
+    path: 'biblia',
+    loadChildren: () => import('./pages/biblia/biblia.module').then( m => m.BibliaPageModule)
   }
 ];
 

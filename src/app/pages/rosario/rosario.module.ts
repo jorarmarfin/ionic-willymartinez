@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PromesasPageRoutingModule } from './promesas-routing.module';
+import { RosarioPageRoutingModule } from './rosario-routing.module';
 
-import { PromesasPage } from './promesas.page';
+import { RosarioPage } from './rosario.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { PipesModule } from 'src/app/pipes/pipes.module';
 
@@ -15,10 +15,10 @@ import { PipesModule } from 'src/app/pipes/pipes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    PromesasPageRoutingModule,
+    RosarioPageRoutingModule,
     ComponentsModule,
     PipesModule
   ],
-  declarations: [PromesasPage] 
+  declarations: [RosarioPage]
 })
-export class PromesasPageModule {}
+export class RosarioPageModule {}

@@ -4,21 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PromesasPageRoutingModule } from './promesas-routing.module';
+import { LibrosPageRoutingModule } from './libros-routing.module';
 
-import { PromesasPage } from './promesas.page';
+import { LibrosPage } from './libros.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { PipesModule } from 'src/app/pipes/pipes.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PromesasPageRoutingModule,
-    ComponentsModule,
-    PipesModule
+    LibrosPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [PromesasPage] 
+  declarations: [LibrosPage]
 })
-export class PromesasPageModule {}
+export class LibrosPageModule {}

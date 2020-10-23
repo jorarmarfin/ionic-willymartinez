@@ -25,45 +25,53 @@
       <h1><img [src]="item.imagen" class="proximamente"></h1>
     </ion-slide>
   </ion-slides>
-  <ion-grid class="mygrid-color">
+  <ion-grid >
     <ion-row>
       <ion-col size="6" routerLink="/biografia">
-        <ion-card class="ion-text-center">
+        <ion-card class="ion-text-center " color="primary"> 
           <ion-card-header>
             <ion-icon name="accessibility" class="myicon-size"></ion-icon>
             <ion-card-subtitle >Biografía</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/promesas">
-        <ion-card class="ion-text-center" >
+      <ion-col size="6" routerLink="/promesas" >
+        <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="heart-circle" class="myicon-size"></ion-icon>
             <ion-card-subtitle >Promesas de Vida</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6">
-        <ion-card class="ion-text-center" >
+      <ion-col size="6" routerLink="/rosario">
+        <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="keypad" class="myicon-size"></ion-icon>
             <ion-card-subtitle >Rosario <br/>on line</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6">
-        <ion-card class="ion-text-center" >
+      <ion-col size="6" routerLink="/biblia">
+        <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="book" class="myicon-size"></ion-icon>
             <ion-card-subtitle >Ahora comprendo la Biblia</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6">
-        <ion-card class="ion-text-center" >
+      <ion-col size="6" routerLink="/predicas">
+        <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="radio" class="myicon-size"></ion-icon>
             <ion-card-subtitle >Predicas</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" routerLink="/libros">
+        <ion-card class="ion-text-center" color="primary">
+          <ion-card-header>
+            <ion-icon name="bookmarks" class="myicon-size"></ion-icon>
+            <ion-card-subtitle >Libros y Manuales</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
