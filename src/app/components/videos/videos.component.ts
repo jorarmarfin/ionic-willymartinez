@@ -19,15 +19,17 @@ export class VideosComponent implements OnInit {
 
   constructor(private modalCtrl: ModalController,
               private loadingCtrl: LoadingController,
-              private october: OctoberService) { }
+              private october: OctoberService) { 
+                
+              }
 
   ngOnInit() {
     this.presentLoading();
-    this.cargaData();
+    this.cargaData('si');
   }
   
   loadData(event){
-    this.cargaData(event);
+    this.cargaData('no',event);
   }
   async presentLoading() {
     this.loading = await this.loadingCtrl.create({
@@ -48,8 +50,8 @@ export class VideosComponent implements OnInit {
     await modal.present();
   
   }
-  cargaData(event?){
-    this.october.getYoutube('promesas').subscribe(resp=>{
+  cargaData(inicio:string,event?){
+    this.october.getYoutube(inicio,'promesas').subscribe(resp=>{
       this.dataYoutube.push(...resp.youtube);
       if (event) {
         event.target.complete();

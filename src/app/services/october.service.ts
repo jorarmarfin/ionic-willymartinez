@@ -16,8 +16,13 @@ export class OctoberService {
 
   constructor(private http:HttpClient) { }
 
-  getYoutube(categoria: string){
-    this.pagina++;
+  getYoutube(inicio:string,categoria: string){
+
+    if (inicio==='si') {
+      this.pagina = 1;
+    } else {
+      this.pagina++;
+    }
     return this.http.get<RespuestaOctober>(`${URL}/youtube/${categoria}?page=${this.pagina}`);
   }
   getProximamente(){

@@ -25,5 +25,6 @@ export class InicioPage implements OnInit {
       this.proximamente.push(...resp.proximamente);
     });
   }
+  onClick(){}
 
 }

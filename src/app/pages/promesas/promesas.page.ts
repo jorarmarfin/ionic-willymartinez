@@ -9,7 +9,7 @@ export class PromesasPage implements OnInit {
 
   categoria: string;
  
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.categoria = 'promesas';

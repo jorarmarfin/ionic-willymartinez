@@ -11,38 +11,63 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <img src="../assets/images/w2.jpg" width="100%"  />
+        <ion-item>
+          <ion-title >Siempres Firmes en la Fe</ion-title>
+          <ion-avatar>
+            <img src="../assets/images/w2.jpg" />
+          </ion-avatar>
+        </ion-item>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <!-- List of Text Items -->
-  <ion-list>
-    <ion-item routerLink="/biografia">
-      <ion-label>Biografía</ion-label>
-    </ion-item>
-    <ion-item routerLink="/promesas">
-      <ion-label>Promesas de vida</ion-label>
-    </ion-item>
-
-    <ion-item routerLink="/asambleas">
-      <ion-label >Asamblea de alabanza y adoración</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Podcast</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Rosario En vivo</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Ahora comprendo la biblia</ion-label>
-    </ion-item>
-  </ion-list>
-  <ion-item>
-    <ion-title class="ion-text-center">Proximamente</ion-title>
-  </ion-item>
   <ion-slides pager="true" [options]="slideOpts">
     <ion-slide *ngFor="let item of proximamente">
       <h1><img [src]="item.imagen" class="proximamente"></h1>
     </ion-slide>
   </ion-slides>
+  <ion-grid class="mygrid-color">
+    <ion-row>
+      <ion-col size="6" routerLink="/biografia">
+        <ion-card class="ion-text-center">
+          <ion-card-header>
+            <ion-icon name="accessibility" class="myicon-size"></ion-icon>
+            <ion-card-subtitle >Biografía</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" routerLink="/promesas">
+        <ion-card class="ion-text-center" >
+          <ion-card-header>
+            <ion-icon name="heart-circle" class="myicon-size"></ion-icon>
+            <ion-card-subtitle >Promesas de Vida</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="ion-text-center" >
+          <ion-card-header>
+            <ion-icon name="keypad" class="myicon-size"></ion-icon>
+            <ion-card-subtitle >Rosario <br/>on line</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="ion-text-center" >
+          <ion-card-header>
+            <ion-icon name="book" class="myicon-size"></ion-icon>
+            <ion-card-subtitle >Ahora comprendo la Biblia</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="ion-text-center" >
+          <ion-card-header>
+            <ion-icon name="radio" class="myicon-size"></ion-icon>
+            <ion-card-subtitle >Predicas</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>      
+
 </ion-content>
