@@ -19,9 +19,7 @@ export class VideosComponent implements OnInit {
 
   constructor(private modalCtrl: ModalController,
               private loadingCtrl: LoadingController,
-              private october: OctoberService) { 
-                
-              }
+              private october: OctoberService) { }
 
   ngOnInit() {
     this.presentLoading();

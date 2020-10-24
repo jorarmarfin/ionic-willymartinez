@@ -1,5 +1,19 @@
 <app-header titulo="Libros y manuales"></app-header>
 
 <ion-content>
-
+<ion-grid fixed>
+    <ion-row>
+        <ion-col size="12" size-sm="6" *ngFor="let item of dataMaterial">
+            <ion-card>
+                <img src="{{ item.imagen }}" />
+                <ion-card-header>
+                <ion-card-title class="ion-text-center ">{{ item.titulo }}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    {{ item.resumen }}
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-grid>
 </ion-content>
