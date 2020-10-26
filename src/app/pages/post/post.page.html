@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Articulo</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrar()" icon="close-outline" ><ion-icon name="close-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12">
+      <ion-label><h1>{{ m_post.titulo }}</h1></ion-label>
+      <img src="{{ m_post.imagen }}" >
+      <p [innerHTML]="m_post.descripcion"></p>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

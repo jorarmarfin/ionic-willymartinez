@@ -34,6 +34,22 @@ const routes: Routes = [
   {
     path: 'biblia',
     loadChildren: () => import('./pages/biblia/biblia.module').then( m => m.BibliaPageModule)
+  },
+  {
+    path: 'firmes',
+    loadChildren: () => import('./pages/firmes/firmes.module').then( m => m.FirmesPageModule)
+  },
+  {
+    path: 'asamblea',
+    loadChildren: () => import('./pages/asamblea/asamblea.module').then( m => m.AsambleaPageModule)
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./pages/blog/blog.module').then( m => m.BlogPageModule)
+  },
+  {
+    path: 'post',
+    loadChildren: () => import('./pages/post/post.module').then( m => m.PostPageModule)
   }
 ];
 
