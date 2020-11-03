@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.willy.jamc" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Willy Martinez</name>
+<widget id="com.willymartinezsanchez.jamc" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Willy Martinez Sanchez</name>
     <description>App de contenido</description>
     <author email="luis.mayta@gmail.com" href="http://sahost.com.pe/">Luis Fernando Mayta Campos</author>
     <content src="index.html" />
