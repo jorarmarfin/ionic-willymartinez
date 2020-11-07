@@ -30,7 +30,7 @@ export class InicioPage implements OnInit {
     let ruta = 'http://willymartinezsanchez.com/';
     if (red == 'f') {
       ruta = 'https://www.facebook.com/willy.martinez.sanchez.2016';
-    }else if(red='y'){
+    }else if(red =='y'){
       ruta = 'https://www.youtube.com/user/WILLYMARTINEZSANCHEZ';
     }else if(red == 't'){
       ruta = 'https://twitter.com/WillyMartinezS1';
