@@ -1,0 +1,9 @@
+<app-header titulo="Curso"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let tema of temas; let i=index" (click)="presentModal(i)">
+      <ion-label class="ion-text-wrap">{{ tema.titulo_audio }}</ion-label>
+    </ion-item>    
+  </ion-list>
+</ion-content>

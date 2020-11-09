@@ -21,3 +21,23 @@ export interface Youtube {
   enlace: string;
   categoria: string;
 }
+
+export interface CursosVirtuales {
+  status: string;
+  totals: number;
+  cursos: Cursos[];
+}
+
+export interface Cursos {
+  nombre: string;
+  descripcion: string;
+  resumen: string;
+  imagen: string;
+  temas: Temas[];
+}
+export interface Temas {
+  titulo_audio: string;
+  codigo_audio: string;
+  tipo: string;
+  id: string;
+}

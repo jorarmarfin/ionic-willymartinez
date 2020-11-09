@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { RespuestaOctober } from '../interfaces/interfaces';
+import { CursosVirtuales, RespuestaOctober } from '../interfaces/interfaces';
 import { RptaOctoberBlog, RptaOctoberMaterial } from '../interfaces/material';
 import { RptaOctoberProx } from '../interfaces/proximamante';
 
@@ -34,5 +34,8 @@ export class OctoberService {
   }
   getBlog(){
     return this.http.get<RptaOctoberBlog>(`${URL}/blog`);
+  }
+  getCursosVirtuales(){
+    return this.http.get<CursosVirtuales>(`${URL}/cursos-virtuales`);
   }
 }

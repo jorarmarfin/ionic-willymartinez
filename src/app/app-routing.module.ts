@@ -50,6 +50,14 @@ const routes: Routes = [
   {
     path: 'post',
     loadChildren: () => import('./pages/post/post.module').then( m => m.PostPageModule)
+  },
+  {
+    path: 'cursos',
+    loadChildren: () => import('./pages/cursos/cursos.module').then( m => m.CursosPageModule)
+  },
+  {
+    path: 'curso',
+    loadChildren: () => import('./pages/curso/curso.module').then( m => m.CursoPageModule)
   }
 ];
 

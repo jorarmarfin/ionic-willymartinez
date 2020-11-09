@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-wrap">{{ titulo }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrar()" icon="close-outline" ><ion-icon name="close-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <iframe *ngIf="tipo=='video'"
+  width="560" 
+  height="315" 
+  [src]="id|doomseguro" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  </iframe>
+  <iframe *ngIf="tipo=='audio'"
+  scrolling="no" 
+  id="hearthis_at_track_4535601" 
+  width="100%" 
+  height="150" 
+  src="https://app.hearthis.at/embed/4535601/transparent_black/?hcolor=&color=&style=2&block_size=2&background=1" 
+  frameborder="0" 
+  allowtransparency>
+  </iframe>
+
+</ion-content>
