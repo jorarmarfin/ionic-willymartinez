@@ -12,25 +12,34 @@ import { ModalcursoPage } from './modalcurso/modalcurso.page';
 export class CursoPage implements OnInit {
 
   temas:Temas;
-  constructor(private storage:Storage,private modalCtrl:ModalController) { }
+  imagen:string;
+  constructor(private storage:Storage,private modalCtrl:ModalController) { 
+    this.cargarCurso();
+  }
 
   ngOnInit() {
-    this.storage.get('curso').then(resp=>{
-      this.temas = resp.temas
-    });
+    
   }
   async presentModal(i:string) {
-    console.log(this.temas);
     const modal = await this.modalCtrl.create({
       component: ModalcursoPage,
       componentProps: {
         'titulo': this.temas[i].titulo_audio,
         'tipo': this.temas[i].tipo,
         'iframe': this.temas[i].codigo_audio,
-        'id': this.temas[i].id
+        'id': this.temas[i].id,
+        'imagen': this.imagen
       }
     });
     return await modal.present();
   }
+  async cargarCurso(){
+    await this.storage.get('curso').then(resp=>{
+      this.temas = resp.temas;
+      this.imagen = resp.imagen;
+    });
+  }
+
+
 
 }

@@ -5,4 +5,6 @@ export interface RptaOctoberProx {
 export interface Proximamente {
   titulo: string;
   imagen: string;
+  inscripcion: number;
+  enlace: string;
 }

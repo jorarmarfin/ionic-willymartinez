@@ -12,6 +12,7 @@ export class ModalcursoPage implements OnInit {
   @Input() iframe:string;
   @Input() tipo:string;
   @Input() id:string;
+  @Input() imagen:string;
 
   constructor(private modalCtrl:ModalController) { }
 

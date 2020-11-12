@@ -27,12 +27,12 @@ export class CursosPage implements OnInit {
       this.cursos = resp.cursos;
     },err=>{},()=>{
       this.loading.dismiss();
-      console.log('cierra');
     })
   }
-  verTema(i:string){
-    this.storage.set('curso',this.cursos[i]);    
-    this.router.navigateByUrl('curso');
+  async verTema(i:string){
+    await this.storage.set('curso',this.cursos[i]).then(()=>{
+      this.router.navigateByUrl('curso');
+    });    
   }
   async presentLoading() {
     this.loading = await this.loadingCrl.create({

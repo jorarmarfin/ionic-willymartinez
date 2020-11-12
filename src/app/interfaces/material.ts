@@ -7,6 +7,7 @@ export interface Material {
   titulo: string;
   resumen: string;
   imagen: string;
+  app: string;
 }
 export interface RptaOctoberBlog {
   status: string;

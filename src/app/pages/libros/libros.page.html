@@ -3,7 +3,7 @@
 <ion-content>
 <ion-grid fixed>
     <ion-row>
-        <ion-col size="12" size-sm="6" *ngFor="let item of dataMaterial">
+        <ion-col size="12" size-sm="6" *ngFor="let item of dataMaterial;let i=index">
             <ion-card>
                 <img src="{{ item.imagen }}" />
                 <ion-card-header>
@@ -12,6 +12,9 @@
                 <ion-card-content>
                     {{ item.resumen }}
                 </ion-card-content>
+                <ion-button (click)="comprar(i)" expand="block" color="primary">
+                    Comprar
+                </ion-button>
             </ion-card>
         </ion-col>
     </ion-row>

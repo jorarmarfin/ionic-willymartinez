@@ -20,34 +20,36 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-slides pager="true" [options]="slideOpts">
-    <ion-slide *ngFor="let item of proximamente">
-      <h1><img [src]="item.imagen" class="proximamente"></h1>
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let item of proximamente" routerLink="/prox">
+      <div>
+        <img [src]="item.imagen" class="proximamente">
+      </div>
     </ion-slide>
   </ion-slides>
   <!-- Iconos -->
   <ion-grid class="ion-padding ion-text-center">
     <ion-row>
-      <ion-col size="2">
+      <ion-col size="2"size-lg="2">
         <ion-icon name="globe-outline" class="wm-icon" (click)="abrirRedSocial('w')"></ion-icon>
       </ion-col>
-      <ion-col size="2">
+      <ion-col size="2"size-lg="2">
         <ion-icon name="logo-youtube" class="wm-icon" (click)="abrirRedSocial('y')"></ion-icon>
       </ion-col>
-      <ion-col size="2">
+      <ion-col size="2"size-lg="2">
         <ion-icon name="logo-facebook" class="wm-icon" (click)="abrirRedSocial('f')"></ion-icon>
       </ion-col>
-      <ion-col size="2">
+      <ion-col size="2"size-lg="2">
         <ion-icon name="logo-twitter" class="wm-icon" (click)="abrirRedSocial('t')"></ion-icon>
       </ion-col>
-      <ion-col size="2">
+      <ion-col size="2"size-lg="2">
         <ion-icon name="logo-instagram" class="wm-icon" (click)="abrirRedSocial('i')"></ion-icon>
       </ion-col>
     </ion-row>
   </ion-grid>
   <ion-grid >
     <ion-row>
-      <ion-col size="6" routerLink="/biografia">
+      <ion-col size="6" size-lg="2" routerLink="/biografia">
         <ion-card class="ion-text-center " color="primary"> 
           <ion-card-header>
             <ion-icon name="accessibility" class="myicon-size"></ion-icon>
@@ -55,7 +57,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/promesas" >
+      <ion-col size="6" size-lg="2" routerLink="/promesas" >
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="heart-circle" class="myicon-size"></ion-icon>
@@ -63,7 +65,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/rosario">
+      <ion-col size="6" size-lg="2" routerLink="/rosario">
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="keypad" class="myicon-size"></ion-icon>
@@ -71,7 +73,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/cursos">
+      <ion-col size="6" size-lg="2" routerLink="/cursos">
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="book" class="myicon-size"></ion-icon>
@@ -79,7 +81,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/libros">
+      <ion-col size="6" size-lg="2" routerLink="/libros">
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="bookmarks" class="myicon-size"></ion-icon>
@@ -87,7 +89,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/firmes">
+      <ion-col size="6" size-lg="2" routerLink="/firmes">
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="pulse" class="myicon-size"></ion-icon>
@@ -95,7 +97,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/asamblea">
+      <ion-col size="6" size-lg="2" routerLink="/asamblea">
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="people" class="myicon-size"></ion-icon>
@@ -103,7 +105,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/blog">
+      <ion-col size="6" size-lg="2" routerLink="/blog">
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="newspaper" class="myicon-size"></ion-icon>
@@ -111,7 +113,7 @@
           </ion-card-header>
         </ion-card>
       </ion-col>
-      <ion-col size="6" routerLink="/predicas">
+      <ion-col size="6" size-lg="2" routerLink="/predicas">
         <ion-card class="ion-text-center" color="primary">
           <ion-card-header>
             <ion-icon name="radio" class="myicon-size"></ion-icon>
